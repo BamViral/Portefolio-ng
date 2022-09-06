@@ -27,7 +27,20 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/style/styles.scss"],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/style/styles.scss",
+              {
+                "input": "src/style/light.scss",
+                "bundleName": "light",
+                "inject": true
+              },
+              {
+                "input": "src/style/dark.scss",
+                "bundleName": "dark",
+                "inject": false
+              }
+          ],
             "scripts": []
           },
           "configurations": {

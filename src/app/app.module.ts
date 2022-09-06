@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
 import { SoundComponent } from './sound/sound.component';
 import { StreamComponent } from './stream/stream.component';
+import { ThemeSwitcherComponent } from './theme-switcher/theme-switcher.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { StreamComponent } from './stream/stream.component';
     AboutComponent,
     ErrorComponent,
     SoundComponent,
-    StreamComponent],
+    StreamComponent,
+    ThemeSwitcherComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
