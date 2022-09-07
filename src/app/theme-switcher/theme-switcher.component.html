@@ -1,1 +1,8 @@
-<button class="btn btn-secondary" (click)="switchTheme()">Switch theme</button>
+<button class="btn btn-secondary" (click)="switchTheme()">
+  <div *ngIf="currentTheme =='light'">
+    <i class="bi-sun-fill"></i>
+  </div>
+  <div *ngIf="currentTheme =='dark'">
+    <i class="bi-moon-fill"></i>
+  </div>
+</button>

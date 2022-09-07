@@ -9,15 +9,18 @@ import { ThemeService } from "../theme.service";
 export class ThemeSwitcherComponent implements OnInit {
 
   constructor(private theme: ThemeService) { }
-
+  currentTheme:string = '';
   ngOnInit(): void {
+    this.currentTheme = this.theme.current;
   }
 
   public switchTheme(): void {
     if (this.theme.current === 'light') {
         this.theme.current = 'dark';
+        this.currentTheme ='dark';
     } else {
         this.theme.current = 'light';
+        this.currentTheme = 'light';
     }
   }
 

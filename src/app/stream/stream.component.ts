@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StreamComponent implements OnInit {
 
+  embedTwitch!:any;
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
